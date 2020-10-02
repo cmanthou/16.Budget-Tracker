@@ -30,7 +30,7 @@ self.addEventListener("activate", function (evt) {
             );
         })
     );
-    self.ClientRectList.claim();
+    self.clients.claim();
 });
 self.addEventListener("fetch", function (evt) {
     if (evt.request.url.includes("/api/")) {
