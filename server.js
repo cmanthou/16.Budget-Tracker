@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/boiling-everglades-05608", {
+mongoose.connect("mongodb://localhost/budgetdb", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
